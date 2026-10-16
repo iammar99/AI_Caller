@@ -23,7 +23,7 @@ const orderSchema = new mongoose.Schema(
       enum: ["pending", "confirmed", "preparing", "out_for_delivery", "completed", "cancelled"],
       default: "pending",
     },
-    source: { type: String, enum: ["web", "call", "manual"], default: "manual" },
+    source: { type: String, enum: ["web", "call", "manual", "ai_chat"], default: "manual" },
   },
   { timestamps: true }
 );
